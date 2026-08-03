@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.36.2"
+       version="1.36.3"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,15 +58,9 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.36.2
-- Iris: posle neuspelog pokusaja prijave kolacici se nisu cuvali, pa je svaka promena kanala
-  pokretala punu prijavu iznova. Sada se cuvaju.
-- Iris i Yettel: kad vise poslova istovremeno osvezava vodic, prijava se sada radi jednom umesto
-  po jednom za svaki posao — na Iris nalogu je svaka prijava zauzimala mesto za uredjaj.
-- Move: kanal cije je odbijanje izazvalo ponovnu prijavu do sada je jedini ostajao bez vodica.
-  Sada se pita ponovo.
-- Broj instalacije se vise ne izmislja iznova ako Kodi ne dozvoli upis — takva kutija je serveru
-  izgledala kao beskrajan niz novih instalacija.
+1.36.3
+- Nema izmena u radu dodatka. Objavljeno da bi ispravke u samom kodu (komentari i provere oko
+  zakljucavanja) bile isporucene zajedno sa verzijom koja stoji u repozitorijumu.
   </news>
   </extension>
 </addon>
