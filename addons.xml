@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.36.3"
+       version="1.36.4"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,9 +59,11 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.36.3
-- Nema izmena u radu dodatka. Objavljeno da bi ispravke u samom kodu (komentari i provere oko
-  zakljucavanja) bile isporucene zajedno sa verzijom koja stoji u repozitorijumu.
+1.36.4
+- Pri azuriranju dodatka u log vise ne upada greska sa tragom. Nista nije bilo pokvareno, ali je taj
+  trag prvo sto covek vidi kad kasnije trazi neki drugi problem.
+- Dijagnostika za Move sada probava i da pusti prvi kanal, pa ekran kaze da li reprodukcija radi, a
+  ne samo da li prijava prolazi.
   </news>
   </extension>
 </addon>

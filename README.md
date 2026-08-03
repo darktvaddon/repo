@@ -65,8 +65,9 @@ Isti podaci mogu se uneti i ručno, u **Podešavanjima** dodatka.
 
 ## Nova izdanja
 
-Kodi proverava repozitorijume **na svakih šest sati**, i to je jedini raspored — nova verzija zato ume
-da se pojavi i nekoliko sati nakon objavljivanja. To nije kvar ni repozitorijuma ni dodatka.
+Kodi sam proverava ovaj repozitorijum **jednom dnevno**, i to je jedini raspored — nova verzija zato
+ume da se pojavi i dan nakon objavljivanja. To nije kvar ni repozitorijuma ni dodatka; Kodi tim ritmom
+proverava sve repozitorijume osim svog zvaničnog, koji gleda na šest sati.
 
 **Ako vam je potrebna odmah:** otvorite **Dodaci → Instaliraj iz repozitorijuma → IPTV Balkan
 repozitorijum → Video dodaci**. Samo otvaranje tog spiska primorava Kodi da preuzme svež indeks, pa se
@@ -135,8 +136,8 @@ playlists — with catch-up and an on-demand library wherever the source provide
 **Installation.** Kodi → Add-ons → *Install from zip file* → the file above → then *Install from
 repository* → IPTV Balkan → Video add-ons → IPTV Balkan. Kodi installs the required components
 (`pvr.iptvsimple`, `inputstream.adaptive`, `inputstream.ffmpegdirect`) by itself, and every later
-release arrives through its normal update check, which runs every six hours. If Kodi refuses the zip
-file, enable **Settings → System → Add-ons → Unknown sources**.
+release arrives through its normal update check, which Kodi runs once a day for this repository. If
+Kodi refuses the zip file, enable **Settings → System → Add-ons → Unknown sources**.
 
 **Requirements.** Kodi 20 or newer, on any platform (Android, Windows, Linux, LibreELEC, macOS). The
 add-on is written in Python and a single zip file works everywhere.
