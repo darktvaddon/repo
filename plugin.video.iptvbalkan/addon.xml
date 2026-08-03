@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.36.1"
+       version="1.36.2"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,15 +58,15 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.36.1
-- Ekran "Sta odlazi sa ovog uredjaja" je govorio netacno: pisalo je da naslovi filmova odlaze na
-  TMDB i na kutiji na kojoj se nista nije trazilo. Sada pise tacno stanje te kutije, a kad podaci
-  idu preko naseg servera pise i to — zajedno sa tim da uz upit ide broj uredjaja.
-- Naslov na tom ekranu je pisao "Slike i opisi" kao "Slike i opisi za Video klub" — ispravljeno.
-- Ako se Iris nalog doda dok Kodi vec radi, tok se vise ne prekida posle minut vremena. Do sada je
-  pomagalo samo gasenje i paljenje Kodija.
-- Nestanak struje usred pisanja vise ne moze da obrise mesta u filmovima ("nastavi gledanje"),
-  procitane poruke iz panela ni podatke o licenci — fajl se sada menja tek kad je ceo upisan.
+1.36.2
+- Iris: posle neuspelog pokusaja prijave kolacici se nisu cuvali, pa je svaka promena kanala
+  pokretala punu prijavu iznova. Sada se cuvaju.
+- Iris i Yettel: kad vise poslova istovremeno osvezava vodic, prijava se sada radi jednom umesto
+  po jednom za svaki posao — na Iris nalogu je svaka prijava zauzimala mesto za uredjaj.
+- Move: kanal cije je odbijanje izazvalo ponovnu prijavu do sada je jedini ostajao bez vodica.
+  Sada se pita ponovo.
+- Broj instalacije se vise ne izmislja iznova ako Kodi ne dozvoli upis — takva kutija je serveru
+  izgledala kao beskrajan niz novih instalacija.
   </news>
   </extension>
 </addon>
