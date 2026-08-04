@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.36.4"
+       version="1.37.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,11 +58,14 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.36.4
-- Pri azuriranju dodatka u log vise ne upada greska sa tragom. Nista nije bilo pokvareno, ali je taj
-  trag prvo sto covek vidi kad kasnije trazi neki drugi problem.
-- Dijagnostika za Move sada probava i da pusti prvi kanal, pa ekran kaze da li reprodukcija radi, a
-  ne samo da li prijava prolazi.
+1.37.0
+- Move: Video klub (filmovi i serije), arhiva iz vodica i premotavanje. Arhivska emisija se do sada
+  nije ni otvarala.
+- Move se vise ne prijavljuje iznova pri svakom ekranu — sesija se pamti, pa je svako otvaranje brze
+  za jednu prijavu. Ako je server odbije, dodatak se tiho prijavi jednom i nastavi.
+- Vodic se povlaci brze: podrazumevano osam paralelnih zahteva umesto cetiri.
+- Arhiva kod Yettela i Irisa: sklonjen slucaj u kome se emisija ne bi otvorila. Do sada ih je od toga
+  cuvala samo zastita sadrzaja; kanal bez nje bi prosao isto kao Move, koji se nije otvarao.
   </news>
   </extension>
 </addon>
