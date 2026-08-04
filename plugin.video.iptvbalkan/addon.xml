@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.38.1"
+       version="1.38.2"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,9 +58,11 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.38.1
-- Ispravka za 1.38.0: u toj verziji je EON vodic ostajao krnj (samo oko jednog dana umesto pet), jer
-  se sacuvani deo nije prepoznavao pri sledecem osvezavanju. Ako si na 1.38.0, ova verzija to vraca.
+1.38.2
+- Video klub na Move-u vise ne puca na nekim filmovima. Odgovor servera dolazi u dva oblika, a
+  dodatak je racunao samo na jedan — otuda "Script failed" bez ijednog objasnjenja.
+- Prekid veze sa provajderom u Video klubu sada javlja poruku umesto greske sa tragom.
+- Osvezavanje vodica je brze: dok se ceka jedan spor kanal, ostali zahtevi vise ne stoje.
   </news>
   </extension>
 </addon>
