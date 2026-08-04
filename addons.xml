@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.37.0"
+       version="1.37.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,14 +59,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.37.0
-- Move: Video klub (filmovi i serije), arhiva iz vodica i premotavanje. Arhivska emisija se do sada
-  nije ni otvarala.
-- Move se vise ne prijavljuje iznova pri svakom ekranu — sesija se pamti, pa je svako otvaranje brze
-  za jednu prijavu. Ako je server odbije, dodatak se tiho prijavi jednom i nastavi.
-- Vodic se povlaci brze: podrazumevano osam paralelnih zahteva umesto cetiri.
-- Arhiva kod Yettela i Irisa: sklonjen slucaj u kome se emisija ne bi otvorila. Do sada ih je od toga
-  cuvala samo zastita sadrzaja; kanal bez nje bi prosao isto kao Move, koji se nije otvarao.
+1.37.1
+- Move Video klub se sada i pusta. Katalozi i spiskovi su radili, ali je pritisak na film isao kao da
+  je kanal, pa je javljao da kanal nije u listi.
+- Sve liste i vodici se preuzimaju komprimovano. Do sada se kompresija nije ni trazila, pa je EON
+  vodic stizao u punoj velicini — to je bio najveci deo cekanja pri osvezavanju.
+- U logu se sada vidi i pritisak na film, ne samo na arhivu.
   </news>
   </extension>
 </addon>
