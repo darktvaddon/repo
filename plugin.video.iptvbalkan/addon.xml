@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.38.0"
+       version="1.38.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,13 +58,9 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.38.0
-- Osvezavanje je znatno krace. EON vodic se vise ne preuzima ceo svaki put: ono sto je proslo se
-  cuva, a ponovo se trazi samo od pre dva sata pa dan unapred i onaj deo koji je nov. Merenjem na
-  pravoj kutiji vodic je bio 449s od devet minuta osvezavanja; sada se trazi izmedju cetiri i pet
-  puta manje podataka.
-- Nista se ne cuva na racun tacnosti: sve sto se prikazuje u naredna 24 sata uvek stize svezе, pa
-  pomerenи termini (produzen prenos) i dalje budu tacni.
+1.38.1
+- Ispravka za 1.38.0: u toj verziji je EON vodic ostajao krnj (samo oko jednog dana umesto pet), jer
+  se sacuvani deo nije prepoznavao pri sledecem osvezavanju. Ako si na 1.38.0, ova verzija to vraca.
   </news>
   </extension>
 </addon>
