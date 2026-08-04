@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.38.4"
+       version="1.38.5"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,12 +58,9 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.38.4
-- EON vodic se ucitava visestruko brze. Do sada se svaki kanal trazio posebno — 302 zahteva; sada se
-  trazi po deset odjednom. Mereno na pravoj kutiji: ogranicenje nije bio internet ni broj paralelnih
-  zahteva, nego oko 0,7 zahteva u sekundi po nalogu.
-- Ako EON odbije da odgovori na toliko kanala odjednom, dodatak sam smanji broj i probа ponovo; ako
-  odbije i pojedinacnu listu, vrati se na stari nacin. Nista ne ostaje bez vodica.
+1.38.5
+- Sitna dopuna prethodne verzije: dodatak je i dalje slao dvadeset kanala po zahtevu iako EON prima
+  deset, pa je jedan zahtev po osvezavanju propadao bez potrebe. Sada odmah salje deset.
   </news>
   </extension>
 </addon>
