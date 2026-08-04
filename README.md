@@ -31,7 +31,7 @@ naloga.
 | **EON** | ✔ | ✔ | ✔ | ✔ |
 | **Iris (MTS)** | ✔ | ✔ | ✔ | ✔ |
 | **Yettel** | ✔ | ✔ | ✔ | ✔ |
-| **Move (MTS)** | ✔ | ✔ | — | — |
+| **Move (MTS)** | ✔ | ✔ | ✔ | ✔ |
 | **Xtream panel** | ✔ | ✔ | ako je panel pruža | ✔ |
 | **M3U / XMLTV lista** | ✔ | uz XMLTV adresu | ako je lista sadrži | filmovi iz liste |
 
