@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.38.5"
+       version="1.39.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,9 +59,14 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.38.5
-- Sitna dopuna prethodne verzije: dodatak je i dalje slao dvadeset kanala po zahtevu iako EON prima
-  deset, pa je jedan zahtev po osvezavanju propadao bez potrebe. Sada odmah salje deset.
+1.39.0
+- Kad arhivska emisija odbije da se pusti, u log sada ide koji provajder, koji kanal i koje vreme je
+  trazeno. Do sada je ostajala samo poruka na ekranu, pa se prijava "neke emisije iz kalendara nece"
+  nije mogla ispratiti.
+- Poruke o zakljucanim podacima za prijavu pisane su pola sa nasim slovima a pola bez; sada su cele
+  na srpskom.
+- Sacuvane sesije provajdera se upisuju atomicno, kao i sve ostalo — nestanak struje usred upisa
+  vise ne moze da ostavi polovicnu.
   </news>
   </extension>
 </addon>
