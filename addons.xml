@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.39.0"
+       version="1.39.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,14 +59,11 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.39.0
-- Kad arhivska emisija odbije da se pusti, u log sada ide koji provajder, koji kanal i koje vreme je
-  trazeno. Do sada je ostajala samo poruka na ekranu, pa se prijava "neke emisije iz kalendara nece"
-  nije mogla ispratiti.
-- Poruke o zakljucanim podacima za prijavu pisane su pola sa nasim slovima a pola bez; sada su cele
-  na srpskom.
-- Sacuvane sesije provajdera se upisuju atomicno, kao i sve ostalo — nestanak struje usred upisa
-  vise ne moze da ostavi polovicnu.
+1.39.1
+- Prvi ekran na tek instaliranom dodatku sada kaze odakle se pocinje. Do sada su na vrhu stajale
+  "Pretraga" i "Video klub" — a oboje vodi u poruku da nijedan provajder nije odgovorio, jer naloga
+  jos nema. Dok nijedan nalog nije unet, meni nudi unos naloga, podesavanja i pomoc; cim nalog
+  postoji, vraca se ceo.
   </news>
   </extension>
 </addon>
