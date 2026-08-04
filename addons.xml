@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.37.1"
+       version="1.37.2"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,12 +59,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.37.1
-- Move Video klub se sada i pusta. Katalozi i spiskovi su radili, ali je pritisak na film isao kao da
-  je kanal, pa je javljao da kanal nije u listi.
-- Sve liste i vodici se preuzimaju komprimovano. Do sada se kompresija nije ni trazila, pa je EON
-  vodic stizao u punoj velicini — to je bio najveci deo cekanja pri osvezavanju.
-- U logu se sada vidi i pritisak na film, ne samo na arhivu.
+1.37.2
+- Ispravka merenja, ne nova mogucnost: broj paralelnih zahteva za vodic vracen je na cetiri. Osam je
+  bilo uvedeno da bi se ubrzalo, a mereno na pravoj kutiji EON je sa cetiri trajao 449s, a sa osam
+  479s — veza je vec bila puna, pa vise niti samo dele isti protok.
+- Ispravljene su i dve recenice u prethodnim beleskama koje su obecavale ubrzanje koje merenje nije
+  potvrdilo.
   </news>
   </extension>
 </addon>
