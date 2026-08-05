@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.39.1"
+       version="1.40.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -59,11 +59,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.39.1
-- Prvi ekran na tek instaliranom dodatku sada kaze odakle se pocinje. Do sada su na vrhu stajale
-  "Pretraga" i "Video klub" — a oboje vodi u poruku da nijedan provajder nije odgovorio, jer naloga
-  jos nema. Dok nijedan nalog nije unet, meni nudi unos naloga, podesavanja i pomoc; cim nalog
-  postoji, vraca se ceo.
+1.40.0
+- Vrednosti od kojih zavisi EON prijava mogu da stignu sa servera, pa kad provajder nesto
+  promeni ispravka stize u roku od 6 sati, bez novog izdanja. Dok se u panelu ne upise
+  nista, sve radi kao i do sada.
+- Log sada u prvom redu kaze sa kog je uredjaja, pa poslat log vise ne mora da se
+  dodatno objasnjava.
   </news>
   </extension>
 </addon>
