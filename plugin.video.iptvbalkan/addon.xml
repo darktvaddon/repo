@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.40.0"
+       version="1.40.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,12 +58,10 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.40.0
-- Vrednosti od kojih zavisi EON prijava mogu da stignu sa servera, pa kad provajder nesto
-  promeni ispravka stize u roku od 6 sati, bez novog izdanja. Dok se u panelu ne upise
-  nista, sve radi kao i do sada.
-- Log sada u prvom redu kaze sa kog je uredjaja, pa poslat log vise ne mora da se
-  dodatno objasnjava.
+1.40.1
+- Move: arhivske emisije starije od par sati vise ne javljaju da ih nema u programu.
+  Dodatak je pitao servis tacno koliko unazad mu treba, a to je znalo da bude jedna
+  emisija prekratko; sada pita sire i, ako treba, jos jednom.
   </news>
   </extension>
 </addon>
