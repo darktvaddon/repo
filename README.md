@@ -108,6 +108,15 @@ Ovde se nalaze isključivo datoteke potrebne za instalaciju; izvornog koda nema.
 | `addons.xml`, `addons.xml.md5` | indeks koji Kodi čita |
 | `plugin.video.iptvbalkan/` | izdanja dodatka, koja Kodi preuzima samostalno |
 
+## Uslovi korišćenja
+
+Dodatak **nije slobodan softver** — vidi [LICENSE.txt](LICENSE.txt). Sme se instalirati i
+koristiti na uređajima za koje je izdata licenca. Bez pisane dozvole autora ne sme se dalje
+deliti, menjati, niti se njegov kod — u celini ili u delovima — koristiti u drugom proizvodu.
+
+Izdanja zaključno sa **1.24.1** bila su objavljena pod GPL-3.0-or-later i ta prava se ne
+povlače unazad; uslovi iz LICENSE.txt važe od **1.25.0** nadalje.
+
 Podaci o filmovima i serijama dolaze sa [TMDB-a](https://www.themoviedb.org/); ovaj dodatak TMDB nije
 odobrio niti sertifikovao. Ikone u meniju su Material Symbols (Google, Apache-2.0).
 
@@ -144,6 +153,10 @@ Kodi refuses the zip file, enable **Settings → System → Add-ons → Unknown 
 **Kodi 22 included**. The add-on is written in Python and a single zip file works everywhere.
 
 **Support.** [Telegram group](https://t.me/+d7XjefqrYkkyYjlk).
+
+**Licence.** This add-on is **not free software** — see [LICENSE.txt](LICENSE.txt). Releases up to
+and including 1.24.1 were published under GPL-3.0-or-later and those rights are not revoked
+retroactively; the terms in LICENSE.txt apply from 1.25.0 onwards.
 
 Film and series metadata is provided by [TMDB](https://www.themoviedb.org/). This product uses the
 TMDB API but is not endorsed or certified by TMDB. Menu icons are Material Symbols (Google,

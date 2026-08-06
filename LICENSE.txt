@@ -1,0 +1,46 @@
+IPTV Balkan — uslovi korišćenja
+Copyright (c) 2026. Sva prava zadržana.
+
+Ovaj dodatak nije slobodan softver.
+
+Dozvoljeno je:
+  - instalirati i koristiti dodatak na uređajima za koje je izdata licenca.
+
+Nije dozvoljeno, bez pisane dozvole autora:
+  - dalje distribuirati dodatak, u celini ili u delovima, besplatno ili uz naknadu;
+  - menjati kod ili praviti izvedena dela;
+  - uklanjati ili zaobilaziti proveru licence;
+  - koristiti kod ili njegove delove u drugom proizvodu.
+
+Dodatak ne isporučuje nikakav sadržaj. Prijavljuje se na nalog koji korisnik već
+ima kod svog operatera; sav sadržaj dolazi sa tog naloga i pod uslovima tog
+operatera.
+
+--------------------------------------------------------------------------------
+PRETHODNA IZDANJA
+--------------------------------------------------------------------------------
+
+Verzije zaključno sa 1.24.1 objavljene su pod GPL-3.0-or-later. Ta prava se ne
+povlače unazad: ko je preuzeo neku od tih verzija, za tu verziju zadržava prava
+koja mu je GPL dao.
+
+Uslovi iznad važe za izdanja od 1.25.0 nadalje.
+
+--------------------------------------------------------------------------------
+ENGLISH — SUMMARY
+--------------------------------------------------------------------------------
+
+This add-on is not free software. Copyright (c) 2026, all rights reserved.
+
+You may install and use it on devices it has been licensed for. Without written
+permission you may not redistribute it in whole or in part, modify it, create
+derivative works, remove or bypass the licence check, or use its code or parts of
+its code in another product.
+
+Releases up to and including 1.24.1 were published under GPL-3.0-or-later. Those
+rights are not revoked retroactively and remain in force for those versions. The
+terms above apply from 1.25.0 onwards.
+
+The add-on carries no content of its own. It signs in to an account the user
+already holds with their own operator; everything played comes from that account,
+under that operator's terms.
