@@ -96,6 +96,7 @@ kao ni dugme za osvežavanje, ne postižu to pouzdano.
 
 Kodi 20 ili noviji, na bilo kojoj platformi (Android, Windows, Linux, LibreELEC, macOS). Dodatak je
 napisan u Pythonu i jedna ista zip datoteka radi svuda — nema posebnih izdanja po uređaju.
+Provereno i na **Kodiju 22**, uključujući arhivu i premotavanje.
 
 ## Sadržaj repozitorijuma
 
@@ -139,8 +140,8 @@ repository* → IPTV Balkan → Video add-ons → IPTV Balkan. Kodi installs the
 release arrives through its normal update check, which Kodi runs once a day for this repository. If
 Kodi refuses the zip file, enable **Settings → System → Add-ons → Unknown sources**.
 
-**Requirements.** Kodi 20 or newer, on any platform (Android, Windows, Linux, LibreELEC, macOS). The
-add-on is written in Python and a single zip file works everywhere.
+**Requirements.** Kodi 20 or newer, on any platform (Android, Windows, Linux, LibreELEC, macOS),
+**Kodi 22 included**. The add-on is written in Python and a single zip file works everywhere.
 
 **Support.** [Telegram group](https://t.me/+d7XjefqrYkkyYjlk).
 
