@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.43.1"
+       version="1.44.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,12 +67,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.43.1
-- Kad Kodi preuzme novu verziju a ne uspe da je postavi, dodatak to sada KAZE — u dijagnostici
-  i u logu. Do sada je takva kutija tiho ostajala na staroj verziji, prijavljivala je kao svoju,
-  i spolja je licilo da nova verzija nikad nije ni objavljena. Ako to vidis: deinstaliraj
-  dodatak i instaliraj ga ponovo iz repozitorijuma — nalozi i podesavanja se cuvaju odvojeno
-  i ostaju.
+1.44.0
+- Zakljucavanje uredjaja sada vazi za SVE kanale. Do sada su se EON televizijski kanali
+  pustali i na zakljucanom uredjaju, jer oni ne idu istim putem kao ostali; sada i taj put
+  proverava licencu. Ako je uredjaj zakljucan, lista kanala i vodic se prazne, pa ni kanali
+  sa M3U/Xtream liste vise ne rade. Posle otkljucavanja se sve vrati jednim osvezavanjem.
+- Za uredjaj kome je samo istekla proba nista se ne menja: lista ostaje gde je bila.
   </news>
   </extension>
 </addon>
