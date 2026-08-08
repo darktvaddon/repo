@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.41.0"
+       version="1.42.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -58,13 +58,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.41.0
-- Move: program (EPG) je bio prazan — 301 kanal, nijedna emisija. Servis odbija da posalje
-  vise od odredjenog broja sati odjednom, a dodatak je trazio celu nedelju. Sada prvo izmeri
-  koliko servis prima pa uzima program u delovima, pocevsi od onoga sto ide sada.
-- EON Video klub sada pocinje onako kako izgleda i u zvanicnoj aplikaciji: Filmovi,
-  Serije, Deca i Dokumentarni, a u njima operaterove sopstvene police (Najgledanije,
-  Novo dodato, Preporuceno). Stari spisak po kanalima je i dalje tu, red nize.
+1.42.0
+- Dijagnostika sada kaze koliko arhive stvarno ima: koliko je dana podeseno u dodatku,
+  koliko proslog vodica Kodi cuva, i koliko se zbog toga zaista preuzima. Do sada je
+  taj odgovor stajao samo u logu, pa je "arhiva mi ide samo dan unazad" trazilo
+  citanje loga; sada pise na ekranu dijagnostike — i u izvestaju koji panel trazi
+  sa uredjaja, pa se vidi i bez korisnika.
   </news>
   </extension>
 </addon>
