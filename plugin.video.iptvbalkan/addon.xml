@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.43.0"
+       version="1.43.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,29 +67,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.43.0
-- NOVO: podsetnici. U pretrazi nadji emisiju koja tek dolazi, drzi OK na njoj i izaberi
-  „Podseti me kad krene” — dodatak se javi dva minuta pre pocetka i ponudi da predje na
-  kanal. Ne snima; podseca.
-- Brojevi kanala se vise ne pomeraju. Kad se jedan izvor iskljuci, svi iza njega su do sada
-  dobijali nove brojeve, pa je naucen broj vodio na drugi kanal, a i Kodijevi favoriti su
-  se lomili. Sada svaki izvor drzi svoj opseg zauvek.
-- Kanali sa M3U liste koji nose sopstvena podesavanja (DRM, posebna zaglavlja) sada rade i
-  iz TV liste, ne samo iz pretrage. Ta podesavanja su se pri upisu liste gubila.
-- „Nastavi gledanje” je na glavnom meniju, a ne tri pritiska duboko u Video klubu.
-- Nalog se moze poslati NA telefon: Nalozi i uredjaji -> „Posalji nalog u aplikaciju (QR)”.
-  Skeniraj kamerom i nalog je u aplikaciji, bez kucanja.
-- Dijagnostika, ekran uredjaja i strana za unos naloga sa telefona su prevedeni. Bili su
-  na engleskom ili u mesavini dva jezika — a upravo tamo dodatak posalje coveka kad nesto
-  ne radi.
-- Dijagnostika sada probava i da PUSTI kanal, za svaki izvor. Do sada je dokazivala samo
-  prijavu, pa je „ne radi mi” prolazilo kroz ekran na kome je sve zeleno.
-- Radio stanice sa Move-a i sa M3U liste sada prate podesavanje gde stanice zive. Do sada
-  su isle u Radio sekciju bez pitanja, gde ih Kodijev audio plejer ponekad prekine.
-- Uparivanje telefonom osvezava samo taj jedan izvor umesto svih — na kutiji sa tri
-  pretplate to je pola minuta umesto sest.
-- Kad kutija dugo spava, posao se posle budjenja razmakne umesto da sve padne u isti
-  trenutak, dok mreza jos nije dosla.
+1.43.1
+- Kad Kodi preuzme novu verziju a ne uspe da je postavi, dodatak to sada KAZE — u dijagnostici
+  i u logu. Do sada je takva kutija tiho ostajala na staroj verziji, prijavljivala je kao svoju,
+  i spolja je licilo da nova verzija nikad nije ni objavljena. Ako to vidis: deinstaliraj
+  dodatak i instaliraj ga ponovo iz repozitorijuma — nalozi i podesavanja se cuvaju odvojeno
+  i ostaju.
   </news>
   </extension>
 </addon>
