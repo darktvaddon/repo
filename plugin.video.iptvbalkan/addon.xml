@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.44.0"
+       version="1.45.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -38,10 +38,10 @@
   <extension point="xbmc.addon.metadata">
     <!-- Stalker is deliberately NOT listed: there is no stalker.py. Advertising a provider that does
          not exist is how a customer buys the wrong thing. -->
-    <summary lang="en_GB">IPTV Balkan — multi-provider client (EON, Iris, Yettel, Move, Xtream, M3U)</summary>
+    <summary lang="en_GB">IPTV Balkan — multi-provider client (EON, Iris, Yettel, Move, A1, Xtream, M3U)</summary>
     <description lang="en_GB">Logs in to your own provider account, builds a channel list and guide, and hands playback to inputstream.adaptive. Every network identity (User-Agent, origin, referer, device descriptors) is configurable, and a full request trace can be exported when a provider changes something.
       Film and series artwork and descriptions come from TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</description>
-    <summary lang="sr_RS">IPTV Balkan — klijent za više provajdera (EON, Iris, Yettel, Move, Xtream, M3U)</summary>
+    <summary lang="sr_RS">IPTV Balkan — klijent za više provajdera (EON, Iris, Yettel, Move, A1, Xtream, M3U)</summary>
     <description lang="sr_RS">Prijavljuje se na tvoj nalog kod provajdera, gradi listu kanala i vodič, a reprodukciju predaje inputstream.adaptive dodatku. Svaki deo mrežnog identiteta (User-Agent, origin, referer, opis uređaja) je podesiv, a pun trag zahteva može da se izveze kada provajder nešto promeni.
       Podaci o filmovima i serijama: TMDB. Ovaj dodatak koristi TMDB i TMDB API, ali TMDB ga nije odobrio niti sertifikovao.</description>
     <!-- THE LOCALE KODI ACTUALLY CALLS SERBIAN, and it was the one missing.
@@ -50,7 +50,7 @@
          never had it does nothing at all). So the addon browser, on the exact locale this product is
          sold in, fell back to the English summary — the first thing a customer reads about it. Same
          text as sr_RS: the point is the tag, not a second translation. -->
-    <summary lang="sr_RS@latin">IPTV Balkan — klijent za više provajdera (EON, Iris, Yettel, Move, Xtream, M3U)</summary>
+    <summary lang="sr_RS@latin">IPTV Balkan — klijent za više provajdera (EON, Iris, Yettel, Move, A1, Xtream, M3U)</summary>
     <description lang="sr_RS@latin">Prijavljuje se na tvoj nalog kod provajdera, gradi listu kanala i vodič, a reprodukciju predaje inputstream.adaptive dodatku. Svaki deo mrežnog identiteta (User-Agent, origin, referer, opis uređaja) je podesiv, a pun trag zahteva može da se izveze kada provajder nešto promeni.
       Podaci o filmovima i serijama: TMDB. Ovaj dodatak koristi TMDB i TMDB API, ali TMDB ga nije odobrio niti sertifikovao.</description>
     <platform>all</platform>
@@ -67,12 +67,15 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.44.0
-- Zakljucavanje uredjaja sada vazi za SVE kanale. Do sada su se EON televizijski kanali
-  pustali i na zakljucanom uredjaju, jer oni ne idu istim putem kao ostali; sada i taj put
-  proverava licencu. Ako je uredjaj zakljucan, lista kanala i vodic se prazne, pa ni kanali
-  sa M3U/Xtream liste vise ne rade. Posle otkljucavanja se sve vrati jednim osvezavanjem.
-- Za uredjaj kome je samo istekla proba nista se ne menja: lista ostaje gde je bila.
+1.45.0
+- NOVO: A1 Xplore. Unesi A1 nalog (Nalozi i uredjaji -> Unesi nalog, ili u podesavanjima) i
+  dobijas kanale, vodic i arhivu, kao i kod ostalih izvora. Arhiva ima TACNU traku vremena i
+  premotavanje radi, jer A1 salje emisiju sa njenim pravim pocetkom i krajem.
+- A1 racuna uredjaje: polje „ID uredjaja" ostavi prazno i kutija sama napravi svoj i zapamti ga.
+  Ako upises ID koji tvoj pregledac ili druga kutija vec koriste, delis isto mesto umesto da
+  trosis novo.
+- A1 broji i istovremene strime, pa dodatak uredno zatvara sesiju kad prekines gledanje. Bez
+  toga bi posle par promena kanala javljalo da nista ne moze da se pusti.
   </news>
   </extension>
 </addon>
