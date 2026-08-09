@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.48.1"
+       version="1.49.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -68,10 +68,13 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.48.1
-- Kad Move odbije prijavu jer na nalogu nema slobodnog mesta za jos jedan uredjaj, dodatak to
-  sada i kaze — i kaze gde se to resava. Do sada je pisalo samo „HTTP 406", sto ne znaci nista
-  i navodi coveka da proverava lozinku koja je ispravna.
+1.49.0
+- Kad u podesavanjima iskljucis neki izvor, njegovi kanali sada NESTAJU odmah. Do sada su ostajali
+  na ekranu do sledeceg redovnog osvezavanja — sto je na podrazumevanom podesavanju moglo da bude
+  i ceo dan — pa je izgledalo da prekidac ne radi. Isto vazi i za ukljucivanje, i za brisanje
+  dodatnog naloga.
+- Promena lozinke i dalje NE pokrece prepravku liste, jer se lista time ne menja: to bi bilo par
+  minuta cekanja bez razloga.
   </news>
   </extension>
 </addon>
