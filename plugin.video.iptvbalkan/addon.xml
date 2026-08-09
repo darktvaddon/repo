@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.49.0"
+       version="1.50.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,13 +67,13 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.49.0
-- Kad u podesavanjima iskljucis neki izvor, njegovi kanali sada NESTAJU odmah. Do sada su ostajali
-  na ekranu do sledeceg redovnog osvezavanja — sto je na podrazumevanom podesavanju moglo da bude
-  i ceo dan — pa je izgledalo da prekidac ne radi. Isto vazi i za ukljucivanje, i za brisanje
-  dodatnog naloga.
-- Promena lozinke i dalje NE pokrece prepravku liste, jer se lista time ne menja: to bi bilo par
-  minuta cekanja bez razloga.
+1.50.0
+- Video klub je sada BRZ na drugom otvaranju. Kad jednom otvoris policu, dodatak je zapamti, pa
+  povratak na nju i setnja kroz zanrove idu odmah — bez ijednog novog zahteva. Izmereno: 305 ms
+  prvi put, 2 ms drugi put; tri zanra 5 ms umesto tri poziva.
+- Odnosi se na EON i A1. Pamte se SAMO spiskovi naslova, nikad strim ni licenca — ono sto istekne
+  se ne cuva. Spisak se sam osvezi posle sest sati, a podrska moze da ga obrise sa daljine.
+- Ako imas dve pretplate kod istog provajdera, svaka ima svoju ostavu — ne mesaju se.
   </news>
   </extension>
 </addon>
