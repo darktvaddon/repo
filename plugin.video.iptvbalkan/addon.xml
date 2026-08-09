@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.46.1"
+       version="1.46.2"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,15 +67,11 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.46.1
-- Unos A1 naloga preko telefona sada radi. U spisku je pisalo A1, ali se posle izbora nije
-  pojavljivalo nijedno polje — ni korisnicko ime, ni lozinka, ni ID uredjaja.
-- Pretraga sada nalazi i naslove iz A1 Video kluba. Do sada je mogla da pogodi samo ime police
-  ili zanra, jer je stala jedan nivo iznad samih naslova — ekran je govorio da nema nista, a
-  imalo je.
-- Sitnije oko A1: gasenje Kodija usred osvezavanja vise ne ceka da se ceo A1 vodic preuzme;
-  brojevi kanala na NOVOJ instalaciji ostaju kao pre (A1 je bio preuzeo prvi opseg); i podrska
-  sada moze da obrise zaglavljenu A1 sesiju sa daljine.
+1.46.2
+- Kad A1 odbije prijavu, dodatak sada kaze STA da proveris umesto da ispise "HttpError 401".
+  A ako je sesija samo istekla, sam se prijavi ponovo i nastavi — do sada je to bila greska
+  na ekranu.
+- Ako A1 servis ne radi, to se vise ne prikazuje kao pogresna lozinka.
   </news>
   </extension>
 </addon>
