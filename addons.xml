@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.46.2"
+       version="1.47.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -68,11 +68,16 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.46.2
-- Kad A1 odbije prijavu, dodatak sada kaze STA da proveris umesto da ispise "HttpError 401".
-  A ako je sesija samo istekla, sam se prijavi ponovo i nastavi — do sada je to bila greska
-  na ekranu.
-- Ako A1 servis ne radi, to se vise ne prikazuje kao pogresna lozinka.
+1.47.0
+- A1 se konacno PUSTA. Greska o DRM dekripteru, sa kojom se nije moglo ni izaci nego je non-stop
+  pokusavao ponovo, bila je jedan jedini znak: A1 token u sebi sadrzi znak koji plejer koristi da
+  razdvoji delove licence, pa je licenca stizala presecena na pola. Ni kanali ni arhiva se zato
+  nisu pustali, iako je sve ostalo radilo.
+- A1 kanali sada nose SVOJE brojeve, one koje vidis i u A1 aplikaciji, umesto da budu numerisani
+  redom od 1.
+- A1 radio stanice se prepoznaju kao radio, jer servis to i kaze.
+- A1 nema kategorije kanala — to je tako kod provajdera, proveravano u njihovoj shemi. Jedina
+  podela koju daje je TV/radio, i nju sada koristimo.
   </news>
   </extension>
 </addon>
