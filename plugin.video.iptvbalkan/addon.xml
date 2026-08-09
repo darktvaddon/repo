@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.46.0"
+       version="1.46.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,17 +67,15 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.46.0
-- A1 Xplore sada stvarno radi, i provereno je na pravom nalogu: 156 kanala, vodic, arhiva i
-  Video klub. U 1.45.0 je bio napisan po snimku iz pregledaca i nije radio nista — kanali,
-  vodic i puštanje su svi trazili pogresne stvari.
-- A1 Video klub: Sport, Filmovi, Deciji program i Zabava, po zanrovima. Naslovi su emisije iz
-  arhive, pa se puste kao i svaka druga arhivska emisija — sa tacnom trakom vremena.
-- Ono sto se ne SME pustiti se vise i ne nudi. Kod A1 oko trecine arhive nema prava za
-  reprizu; do sada bi se takva emisija otvorila pa javila gresku, sto lici na pokvaren plejer.
-  Sada takve stavke ne ulaze ni u listu.
-- Kanali koje pretplata ne nosi, i oni koje si sam zakljucao u A1 profilu, vise se ne
-  pojavljuju u listi.
+1.46.1
+- Unos A1 naloga preko telefona sada radi. U spisku je pisalo A1, ali se posle izbora nije
+  pojavljivalo nijedno polje — ni korisnicko ime, ni lozinka, ni ID uredjaja.
+- Pretraga sada nalazi i naslove iz A1 Video kluba. Do sada je mogla da pogodi samo ime police
+  ili zanra, jer je stala jedan nivo iznad samih naslova — ekran je govorio da nema nista, a
+  imalo je.
+- Sitnije oko A1: gasenje Kodija usred osvezavanja vise ne ceka da se ceo A1 vodic preuzme;
+  brojevi kanala na NOVOJ instalaciji ostaju kao pre (A1 je bio preuzeo prvi opseg); i podrska
+  sada moze da obrise zaglavljenu A1 sesiju sa daljine.
   </news>
   </extension>
 </addon>
