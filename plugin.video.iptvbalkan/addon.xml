@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.48.0"
+       version="1.48.1"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,16 +67,10 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.48.0
-- Move Video klub vise ne staje u pola. Katalog se ucitavao u tri strane pa bi prosto prestao —
-  bez ijedne poruke — a Kodi na kraju liste vrati kursor na vrh, pa je izgledalo kao da se vraca
-  na pocetak. Sada na dnu stoji „Sledeca strana" i nastavlja tacno tamo gde je stalo.
-- Kvalitet slike: dodatak sada izricito trazi da plejer bira najbolju verziju koju veza i uredjaj
-  dozvoljavaju. Do sada nije govorio nista, pa je odluka padala na podrazumevano podesavanje
-  inputstream-a, koje je za zasticene (DRM) kanale namerno opreznije.
-- Ako je ukljuceno detaljno belezenje, u log se sada upisuje i STA manifest kanala nudi — koje
-  rezolucije i u kojim grupama. Prijava „4K kanal svira u 480p" se bez toga ne moze resiti, jer
-  manifest preuzima plejer a ne dodatak, pa se u logu nikad nije video.
+1.48.1
+- Kad Move odbije prijavu jer na nalogu nema slobodnog mesta za jos jedan uredjaj, dodatak to
+  sada i kaze — i kaze gde se to resava. Do sada je pisalo samo „HTTP 406", sto ne znaci nista
+  i navodi coveka da proverava lozinku koja je ispravna.
   </news>
   </extension>
 </addon>
