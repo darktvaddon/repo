@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.51.0"
+       version="1.52.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -68,12 +68,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.51.0
-- Brzi Video klub sada vazi i za Iris i za Move, ne samo EON i A1. Kod Irisa se to najvise oseti:
-  on nema pretragu na svom serveru, pa dodatak mora da prosetа ceo katalog — sada jednom, umesto
-  pri svakom otvaranju.
-- Spisak epizoda serije se NAMERNO ne pamti: nova epizoda koja ide veceras ne sme da se pojavi
-  jednu posetu kasnije.
+1.52.0
+- „Kanali se vide u pretrazi dodatka ali ih nema u TV listi" sada ima odgovor. Dodatak posle
+  upisa liste PROVERI koliko je kanala Kodi stvarno primio i to upise u log i u dijagnostiku,
+  jedan pored drugog.
+- Ako je IPTV Simple instaliran ali ISKLJUCEN — a to je najcesci razlog za praznu TV listu —
+  dodatak to sada kaze i napise gde se ukljucuje. Do sada je sve u logu izgledalo uspesno.
   </news>
   </extension>
 </addon>
