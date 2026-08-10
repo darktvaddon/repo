@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.52.1"
+       version="1.52.2"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -68,11 +68,12 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.52.1
-- Jos jedan razlog za praznu (ili tudju) TV listu koji se do sada nigde nije video: IPTV Simple ume
-  da radi u vise instanci, i ako svaka od njih vec pokazuje na neku drugu listu, dodatak svoju
-  upise ispravno a televizor je nikad ne procita. Sada se to kaze — i gde pokazuje sada i gde
-  treba — a u dijagnostici pise koja instanca cita koju listu.
+1.52.2
+- Video klub se vise ne rusi kad jedan provajder ne odgovori. Do sada je prekinuta veza sa jednim
+  serverom obarala CEO ekran, sa porukom o gresci umesto liste — i onda kad su ostali provajderi
+  radili. Sada se preskace samo taj, a ako nijedan ne odgovori, pise KOJI i da je u pitanju veza.
+- EON poruka "nema Device ID" je bila nedovrsena recenica pa se uputstvo iz nje nije moglo
+  ispratiti. Napisana je ponovo.
   </news>
   </extension>
 </addon>
