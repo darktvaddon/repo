@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.52.3"
+       version="1.53.0"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -68,17 +68,15 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.52.3
-- "PVR menadzer se pokrece" i kanala nema — dva uzroka nadjena i zatvorena.
-- Na svezoj instalaciji Kodi pokrene IPTV Simple PRE nego sto lista uopste postoji (nalog se dodaje
-  posle). Kad je dodatak prvi put napise, to se do sada NIJE racunalo kao promena, pa Kodiju niko
-  nije rekao da pogleda ponovo — televizor je ostajao prazan do rucnog restarta. Sada se racuna.
-- Ako je instanca IPTV Simple-a pokazivala na NASU listu ali sa tipom "adresa (URL)" umesto
-  "lokalni fajl", klijent je citao fajl kao internet adresu i podizao se prazan — a sve u logu je
-  izgledalo ispravno. Tip se sada ispravlja, ali SAMO na instanci koja je nasa; tudja daljinska
-  lista zadrzava svoje.
-- Kad PVR ostane prazan, log sada odmah ispise sta svaka instanca cita: putanju I tip. Isto pise i
-  u dijagnostici.
+1.53.0
+- Kanali se sada pale ZNATNO brze. Izmereno na telefonu: dvadeset sekundi od pritiska do slike, od
+  cega je cetrnaest proslo pre nego sto je reprodukcija uopste pocela da se priprema.
+- Uzrok: FFmpeg — koji otvara svaki kanal sa arhivom — ne bira jedan nivo kvaliteta i prilagodjava
+  se, nego OTVORI I ISPITA SVAKI nivo u strimu pre pocetka, pa ipak pusti najbolji. Kod EON-a su to
+  cetiri nivoa, tri se nikad ne gledaju, a placa se cekanjem na svaki kanal.
+- Plejer sada dobija samo onaj nivo koji bi i pustio. Slika je ista. U podesavanjima („Koliko nivoa
+  kvaliteta dobija plejer") moze i „samo najnizi" za sporu vezu, ili „svi" ako neko hoce kako je
+  bilo.
   </news>
   </extension>
 </addon>
