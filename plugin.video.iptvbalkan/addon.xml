@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.iptvbalkan"
        name="IPTV Balkan"
-       version="1.52.2"
+       version="1.52.3"
        provider-name="IPTV Balkan">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -67,12 +67,17 @@
     <!-- Shown by Kodi on the addon's own page, and it is the only release note most people ever read.
          Written for a viewer — what changed on their television — rather than as a commit log. -->
     <news>
-1.52.2
-- Video klub se vise ne rusi kad jedan provajder ne odgovori. Do sada je prekinuta veza sa jednim
-  serverom obarala CEO ekran, sa porukom o gresci umesto liste — i onda kad su ostali provajderi
-  radili. Sada se preskace samo taj, a ako nijedan ne odgovori, pise KOJI i da je u pitanju veza.
-- EON poruka "nema Device ID" je bila nedovrsena recenica pa se uputstvo iz nje nije moglo
-  ispratiti. Napisana je ponovo.
+1.52.3
+- "PVR menadzer se pokrece" i kanala nema — dva uzroka nadjena i zatvorena.
+- Na svezoj instalaciji Kodi pokrene IPTV Simple PRE nego sto lista uopste postoji (nalog se dodaje
+  posle). Kad je dodatak prvi put napise, to se do sada NIJE racunalo kao promena, pa Kodiju niko
+  nije rekao da pogleda ponovo — televizor je ostajao prazan do rucnog restarta. Sada se racuna.
+- Ako je instanca IPTV Simple-a pokazivala na NASU listu ali sa tipom "adresa (URL)" umesto
+  "lokalni fajl", klijent je citao fajl kao internet adresu i podizao se prazan — a sve u logu je
+  izgledalo ispravno. Tip se sada ispravlja, ali SAMO na instanci koja je nasa; tudja daljinska
+  lista zadrzava svoje.
+- Kad PVR ostane prazan, log sada odmah ispise sta svaka instanca cita: putanju I tip. Isto pise i
+  u dijagnostici.
   </news>
   </extension>
 </addon>
