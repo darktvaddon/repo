@@ -82,7 +82,7 @@
 </addon>
 <addon id="repository.iptvbalkan"
        name="IPTV Balkan repozitorijum"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="IPTV Balkan">
   <extension point="xbmc.addon.repository" name="IPTV Balkan">
     <dir>

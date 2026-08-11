@@ -15,10 +15,25 @@
   pack.py reads it (for the version) and zips it, and it builds `addons.xml` — the index — from it and
   from the addon's own manifest. The comment that used to sit here said the opposite, which would have
   cost somebody an afternoon of wondering why their edit "kept being undone".
+
+  1.0.1 — THE VERSION WAS RAISED TO MIGRATE THE PEOPLE WHO WERE LEFT BEHIND.
+
+  Until now two different files shipped under the SAME version 1.0.0. One sent Kodi to
+  `raw.githubusercontent.com/darktvaddon/repo` (right); the other, still live on
+  `iptvbox-player.com/kodi/`, sent it back to that server — which has been stuck on the add-on's
+  1.23.0 since the move to GitHub. Anyone who installed the repository from the server has therefore
+  received NO update at all, quietly: everything "works" on their box, it simply never changes.
+
+  Kodi could not repair that by itself, and this is the part worth remembering: an add-on is only
+  offered an update when the version NUMBER rises. Both files said 1.0.0, so there was nothing to
+  offer — the wrong pointer was frozen in place by the very mechanism meant to fix it.
+
+  Hence 1.0.1. Published to BOTH trees, the stale boxes see a newer repository, update it, and from
+  that moment read GitHub. Once they have, the old channel can be retired.
 -->
 <addon id="repository.iptvbalkan"
        name="IPTV Balkan repozitorijum"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="IPTV Balkan">
   <extension point="xbmc.addon.repository" name="IPTV Balkan">
     <dir>
